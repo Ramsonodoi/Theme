@@ -14,16 +14,25 @@ export class CustomnavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    const storedColor = localStorage.getItem('selectedColor');
       this.theme.color.subscribe(value=>{
-       this.color = value
+      //  this.color = value
+      this.color = storedColor || '';
       //  console.log(value, "coloy")
       })
    }
 
+  
 
-   changeColor() {
-     console.log(this.selectedColor, "sel")
-    this.theme.updateColor(this.selectedColor)
+
+  //  changeColor() {
+  //    console.log(this.selectedColor, "sel")
+  //   this.theme.updateColor(this.selectedColor)
+  // }
+
+  changeColor() {
+    this.color = this.selectedColor;
+    localStorage.setItem('selectedColor', this.selectedColor);
   }
   }
   

@@ -1,5 +1,5 @@
 <div>
-  <nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 z-50 shadow-md ">
+  <nav [style.background-color]="color ? color : ''"  class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 z-50 shadow-md ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="#" class="flex items-center">
           <img src="../../assets/images/Frame 498.svg" class="h-8 mr-3" alt="Flowbite Logo" />
@@ -25,8 +25,8 @@
 <div>
     
  
- <div id="default-sidebar" class="fixed  left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-    <div class="h-full px-3 py-4 overflow-y-auto bg-orange-500 dark:bg-gray-800">
+ <div [style.background-color]="color ? color : ''"  id="default-sidebar" class="fixed  bg-gray-600 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+    <div class="h-full px-3 py-4 overflow-y-auto dark:bg-gray-800">
        <ul class="space-y-2 font-medium">
           <li>
              <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
@@ -68,7 +68,7 @@
  
  <div class="p-4 sm:ml-64" >
     <div class="flex flex-col gap-4 items-center">
-        <button [ngClass]="'bg-['+color+']'"  class="w-[6.435rem] h-[2.5rem] rounded-lg  text-white hover:bg-orange-600">Add User</button>
+        <button  [style.background-color]="color ? color : ''" class="w-[6.435rem] h-[2.5rem] rounded-lg  text-white hover:bg-orange-600">Add User</button>
         <button class="w-[6.435rem] h-[2.5rem] rounded-lg bg-white text-orange-500 border border-orange-500 hover:bg-orange-100">Add Role</button>
         <button class="w-[6.435rem] h-[2.5rem] rounded-lg text-orange-500 hover:text-orange-600">Add Question</button>
       </div>
