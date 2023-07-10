@@ -33,6 +33,7 @@ export class CustomnavbarComponent implements OnInit {
   changeColor() {
     this.color = this.selectedColor;
     localStorage.setItem('selectedColor', this.selectedColor);
+    console.log(this.color, "pop")
   }
   }
   

@@ -12,6 +12,7 @@
           </li>
           <li>
              <form >
+               <label for="selectedColor">select theme</label>
     <input type="color" id="favcolor" (change)="changeColor()" [(ngModel)]="selectedColor" name="favcolor">
    
  </form>
@@ -69,7 +70,7 @@
  <div class="p-4 sm:ml-64" >
     <div class="flex flex-col gap-4 items-center">
         <button  [style.background-color]="color ? color : ''" class="w-[6.435rem] h-[2.5rem] rounded-lg  text-white hover:bg-orange-600">Add User</button>
-        <button class="w-[6.435rem] h-[2.5rem] rounded-lg bg-white text-orange-500 border border-orange-500 hover:bg-orange-100">Add Role</button>
+        <button [style.border-color]="color ? color : ''" class="w-[6.435rem] h-[2.5rem] rounded-lg bg-white text-orange-500 border border-orange-500 hover:bg-orange-100">Add Role</button>
         <button class="w-[6.435rem] h-[2.5rem] rounded-lg text-orange-500 hover:text-orange-600">Add Question</button>
       </div>
  </div>
