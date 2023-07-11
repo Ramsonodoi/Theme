@@ -1,5 +1,5 @@
 <div>
-  <nav [style.background-color]="color ? color : ''"  class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 z-50 shadow-md ">
+  <nav  class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 z-50 shadow-md ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="#" class="flex items-center">
           <img src="../../assets/images/Frame 498.svg" class="h-8 mr-3" alt="Flowbite Logo" />
@@ -69,9 +69,9 @@
  
  <div class="p-4 sm:ml-64" >
     <div class="flex flex-col gap-4 items-center">
-        <button  [style.background-color]="color ? color : ''" class="w-[6.435rem] h-[2.5rem] rounded-lg  text-white hover:bg-orange-600">Add User</button>
-        <button [style.border-color]="color ? color : ''" class="w-[6.435rem] h-[2.5rem] rounded-lg bg-white text-orange-500 border border-orange-500 hover:bg-orange-100">Add Role</button>
-        <button class="w-[6.435rem] h-[2.5rem] rounded-lg text-orange-500 hover:text-orange-600">Add Question</button>
+        <button  [style.background-color]="color ? color : ''" class="w-[6.435rem] h-[2.5rem] bg-amber-700 rounded-lg  text-white hover:bg-orange-600">Add User</button>
+        <button [style.border-color]="color ? color : ''" [style.color]="color ? color : ''"  class="w-[6.435rem] h-[2.5rem] rounded-lg bg-white text-orange-500 border border-orange-500 ">Add Role</button>
+        <button [style.color]="color ? color : ''"  class="w-[6.435rem] h-[2.5rem] rounded-lg text-orange-500 hover:text-orange-600">Add Question</button>
       </div>
  </div>
  
